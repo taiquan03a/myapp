@@ -1,0 +1,13 @@
+{
+    "name": "zalopay-sdk",
+    "version": "1.0.0",
+    "main": "index.js",
+    "react-native": "index.js",
+    "peerDependencies": {
+        "react": "*",
+        "react-native": "*"
+    },
+    "dependencies": {
+        "zalopay-sdk": "file:./native-modules/zalopay-sdk"
+    }
+}
