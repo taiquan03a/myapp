@@ -13,43 +13,40 @@
       "backgroundColor": "#ffffff"
     },
     "scheme": "myapp",
-    "deepLinking": true,
-    "deepLinks": [
-      "myapp://"
-    ],
-    "platforms": [
-      "ios",
-      "android"
-    ],
-    "ios": {
-      "bundleIdentifier": "com.yourapp.zalopay",
-      "infoPlist": {
-        "LSApplicationQueriesSchemes": [
-          "zalopay",
-          "zalo",
-          "zalopay.api.v2",
-          "zalopay",
-          "zalo",
-          "zalopay.api.v2"
-        ],
-        "ITSAppUsesNonExemptEncryption": false
-      }
-    },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.anonymous.myapp"
+      "package": "com.anonymous.myapp",
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "data": [
+            {
+              "scheme": "myapp",
+              "host": "result"
+            }
+          ],
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
+        }
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "expo": {
-      "plugins": [
-        "./plugins/withZaloPay"
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#ffffff"
+        }
       ]
-    },
+    ],
     "extra": {
       "eas": {
         "projectId": "3724c465-3fd3-44a5-b79a-2158008fdf84"
