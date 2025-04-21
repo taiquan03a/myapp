@@ -9,6 +9,9 @@ const styles = StyleSheet.create({
         borderBottomColor: '#ccc',
         marginBottom: 10,
     },
+    unread: {
+        backgroundColor: '#d0ebff', // Màu cho thông báo chưa đọc
+    },
     title: { fontSize: 16, fontWeight: 'bold' },
     message: { fontSize: 14, color: '#333' },
     date: { fontSize: 12, color: '#666' },

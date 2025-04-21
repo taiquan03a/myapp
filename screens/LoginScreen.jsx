@@ -44,7 +44,7 @@ export default function LoginScreen({ navigation }) {
                 Alert.alert('Đăng nhập thành công!');
                 navigation.navigate('Main', {
                     screen: 'Notifications',
-                    params: { userId: data.userId }
+                    params: { userId: data.data.userId }
                 });
             } else {
                 Alert.alert('Lỗi xác thực với backend!');

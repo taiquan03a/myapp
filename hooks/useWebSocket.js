@@ -11,10 +11,13 @@ export const useWebSocket = (userId, onMessageReceived) => {
             heartbeatOutgoing: 4000,
             webSocketFactory: () => new WebSocket('ws://10.0.2.2:9090/ws'),
         });
+        console.log('WebSocket client created:', userId);
 
         client.onConnect = () => {
             client.subscribe(`/topic/notifications/${userId}`, (message) => {
+                
                 const notification = JSON.parse(message.body);
+                console.log('Received message:', notification);
                 onMessageReceived(notification);
             });
         };
