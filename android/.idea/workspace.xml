@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AutomaticModuleUnloader">
+    <loaded-modules>
+      <module name="demoAppToApp" />
+      <module name="demoAppToApp.app" />
+      <module name="demoAppToApp.expo-constants" />
+      <module name="demoAppToApp.expo-error-recovery" />
+      <module name="demoAppToApp.expo-file-system" />
+      <module name="demoAppToApp.expo-font" />
+      <module name="demoAppToApp.expo-image-loader" />
+      <module name="demoAppToApp.expo-keep-awake" />
+      <module name="demoAppToApp.expo-linear-gradient" />
+      <module name="demoAppToApp.expo-location" />
+      <module name="demoAppToApp.expo-permissions" />
+      <module name="demoAppToApp.expo-splash-screen" />
+      <module name="demoAppToApp.expo-sqlite" />
+      <module name="demoAppToApp.expo-updates" />
+      <module name="demoAppToApp.expo-web-browser" />
+      <module name="demoAppToApp.react-native-gesture-handler" />
+      <module name="demoAppToApp.react-native-reanimated" />
+      <module name="demoAppToApp.react-native-screens" />
+      <module name="demoAppToApp.unimodules-app-loader" />
+      <module name="demoAppToApp.unimodules-barcode-scanner-interface" />
+      <module name="demoAppToApp.unimodules-camera-interface" />
+      <module name="demoAppToApp.unimodules-constants-interface" />
+      <module name="demoAppToApp.unimodules-core" />
+      <module name="demoAppToApp.unimodules-face-detector-interface" />
+      <module name="demoAppToApp.unimodules-file-system-interface" />
+      <module name="demoAppToApp.unimodules-font-interface" />
+      <module name="demoAppToApp.unimodules-image-loader-interface" />
+      <module name="demoAppToApp.unimodules-permissions-interface" />
+      <module name="demoAppToApp.unimodules-react-native-adapter" />
+      <module name="demoAppToApp.unimodules-sensors-interface" />
+      <module name="demoAppToApp.unimodules-task-manager-interface" />
+      <module name="demoAppToApp.zpdk-release-28052021" />
+    </loaded-modules>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9e274728-90c1-41a5-b651-8ca3105abfbd" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[BGE00164067]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="ProjectId" id="1hXVgxPDuyDPVEPRSewFzsLZyPx" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Dependencies" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.31584257" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="PsdUISettings">
+    <option name="LAST_EDITED_BUILD_TYPE" value="debug" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="demoAppToApp.app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9e274728-90c1-41a5-b651-8ca3105abfbd" name="Default Changelist" comment="" />
+      <created>1600157538648</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600157538648</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="UnloadedModulesList">
+    <module name="zpdk-sandboxMerchant-release" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="365" y="275" key="#PSD" timestamp="1622696750009">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="365" y="275" key="#PSD/0.0.1680.1050@0.0.1680.1050" timestamp="1622696750009" />
+    <state x="365" y="293" key="#PSD/0.25.1680.1025@0.25.1680.1025" timestamp="1622694487267" />
+    <state width="819" height="291" key="GridCell.Tab.0.bottom" timestamp="1622697063151">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="819" height="291" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1622697063151" />
+    <state width="819" height="291" key="GridCell.Tab.0.center" timestamp="1622697063150">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="819" height="291" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1622697063150" />
+    <state width="819" height="291" key="GridCell.Tab.0.left" timestamp="1622697063149">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="819" height="291" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1622697063149" />
+    <state width="819" height="291" key="GridCell.Tab.0.right" timestamp="1622697063150">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="819" height="291" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1622697063150" />
+    <state x="527" y="189" key="psd.add.module.dependency.panel.dimension" timestamp="1622696746559">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="527" y="189" key="psd.add.module.dependency.panel.dimension/0.0.1680.1050@0.0.1680.1050" timestamp="1622696746559" />
+  </component>
+</project>

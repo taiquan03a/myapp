@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":unimodules-permissions-interface" external.linked.project.path="$MODULE_DIR$/../../../../node_modules/unimodules-permissions-interface/android" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="org.unimodules" external.system.module.version="5.1.0" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="android-gradle" name="Android-Gradle">
+      <configuration>
+        <option name="GRADLE_PROJECT_PATH" value=":unimodules-permissions-interface" />
+        <option name="LAST_SUCCESSFUL_SYNC_AGP_VERSION" value="4.0.0" />
+        <option name="LAST_KNOWN_AGP_VERSION" value="4.0.0" />
+      </configuration>
+    </facet>
+    <facet type="android" name="Android">
+      <configuration>
+        <option name="SELECTED_BUILD_VARIANT" value="debug" />
+        <option name="ASSEMBLE_TASK_NAME" value="assembleDebug" />
+        <option name="COMPILE_JAVA_TASK_NAME" value="compileDebugSources" />
+        <afterSyncTasks>
+          <task>generateDebugSources</task>
+        </afterSyncTasks>
+        <option name="ALLOW_USER_CONFIGURATION" value="false" />
+        <option name="MANIFEST_FILE_RELATIVE_PATH" value="/src/main/AndroidManifest.xml" />
+        <option name="RES_FOLDER_RELATIVE_PATH" value="/src/main/res" />
+        <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/../../../../node_modules/unimodules-permissions-interface/android/src/main/res;file://$MODULE_DIR$/../../../../node_modules/unimodules-permissions-interface/android/src/debug/res;file://$MODULE_DIR$/../../../../node_modules/unimodules-permissions-interface/android/build/generated/res/rs/debug" />
+        <option name="TEST_RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/../../../../node_modules/unimodules-permissions-interface/android/src/androidTest/res;file://$MODULE_DIR$/../../../../node_modules/unimodules-permissions-interface/android/src/androidTestDebug/res;file://$MODULE_DIR$/../../../../node_modules/unimodules-permissions-interface/android/build/generated/res/rs/androidTest/debug" />
+        <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/src/main/assets" />
+        <option name="PROJECT_TYPE" value="1" />
+      </configuration>
+    </facet>
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="3" platform="JVM 1.6" allPlatforms="JVM [1.6]" useProjectSettings="false">
+        <compilerSettings>
+          <option name="additionalArguments" value="-Xallow-no-source-files" />
+        </compilerSettings>
+        <compilerArguments>
+          <option name="destination" value="$MODULE_DIR$/../../../../node_modules/unimodules-permissions-interface/android/build/tmp/kotlin-classes/debug" />
+          <option name="classpath" value="$MODULE_DIR$/../../../../node_modules/unimodules-permissions-interface/android/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/R.jar:/Users/lap12580/.gradle/caches/transforms-2/files-2.1/6a7f302b947c96f49c07e7f407395d3b/jetified-kotlin-stdlib-jdk7-1.3.50.jar:/Users/lap12580/.gradle/caches/transforms-2/files-2.1/cf3a9b4c74eb980046489c1e261bd6f6/jetified-kotlin-stdlib-1.3.50.jar:/Users/lap12580/.gradle/caches/transforms-2/files-2.1/6810f932cea38d63afc261c0ea249753/jetified-kotlin-stdlib-common-1.3.50.jar:/Users/lap12580/.gradle/caches/transforms-2/files-2.1/652d118159daf0fe2b76ab40fd9c60df/jetified-annotations-13.0.jar:/Users/lap12580/Downloads/DemoZPDK_ReactNative/demo-app-to-app/node_modules/@unimodules/core/android/build/intermediates/compile_library_classes_jar/debug/classes.jar:/Users/lap12580/Library/Android/sdk/platforms/android-28/android.jar:/Users/lap12580/Library/Android/sdk/build-tools/29.0.2/core-lambda-stubs.jar" />
+          <option name="noStdlib" value="true" />
+          <option name="noReflect" value="true" />
+          <option name="moduleName" value="unimodules-permissions-interface_debug" />
+          <option name="languageVersion" value="1.3" />
+          <option name="apiVersion" value="1.3" />
+          <option name="pluginOptions">
+            <array />
+          </option>
+          <option name="pluginClasspaths">
+            <array />
+          </option>
+          <option name="errors">
+            <ArgumentParseErrors />
+          </option>
+        </compilerArguments>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+    <output url="file://$MODULE_DIR$/../../../../node_modules/unimodules-permissions-interface/android/build/intermediates/javac/debug/classes" />
+    <output-test url="file://$MODULE_DIR$/../../../../node_modules/unimodules-permissions-interface/android/build/intermediates/javac/debugUnitTest/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../node_modules/unimodules-permissions-interface/android">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../node_modules/unimodules-permissions-interface/android/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../../node_modules/unimodules-permissions-interface/android/build/generated/source/buildConfig/debug" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../../node_modules/unimodules-permissions-interface/android/build/generated/ap_generated_sources/debug/out" isTestSource="false" generated="true" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../../node_modules/unimodules-permissions-interface/android/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../../node_modules/unimodules-permissions-interface/android/build" />
+    </content>
+    <orderEntry type="jdk" jdkName="Android API 28 Platform" jdkType="Android SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.50" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.3.50" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.3.50" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
+    <orderEntry type="module" module-name="demoAppToApp.unimodules-core" />
+  </component>
+</module>

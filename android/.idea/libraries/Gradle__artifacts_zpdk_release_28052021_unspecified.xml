@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: artifacts:zpdk-release-28052021:unspecified">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/zpdk-release-28052021/build/.transforms/e63b53ac1f5fc24ba5791a6044469053/jetified-zpdk-release-28052021/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/zpdk-release-28052021/build/.transforms/e63b53ac1f5fc24ba5791a6044469053/jetified-zpdk-release-28052021/res" />
+      <root url="file://$PROJECT_DIR$/zpdk-release-28052021/build/.transforms/e63b53ac1f5fc24ba5791a6044469053/jetified-zpdk-release-28052021/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

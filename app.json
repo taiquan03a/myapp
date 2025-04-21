@@ -13,6 +13,11 @@
       "backgroundColor": "#ffffff"
     },
     "scheme": "myapp",
+    "deepLinking": true,
+    "platforms": [
+      "android",
+      "ios"
+    ],
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
@@ -25,7 +30,7 @@
           "data": [
             {
               "scheme": "myapp",
-              "host": "result"
+              "host": "payment-result"
             }
           ],
           "category": [
@@ -49,7 +54,7 @@
     ],
     "extra": {
       "eas": {
-        "projectId": "3724c465-3fd3-44a5-b79a-2158008fdf84"
+        "projectId": "aa971bac-28af-4f11-99c6-873768c8403c"
       }
     }
   }

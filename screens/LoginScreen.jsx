@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, Button, Alert, Platform } from 'react-native';
+import { View, Text, TextInput, Button, Alert, Platform, StyleSheet, TouchableOpacity } from 'react-native';
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { registerForPushNotificationsAsync } from '../utils/notifications';
@@ -13,6 +13,15 @@ export default function LoginScreen({ navigation }) {
     const [password, setPassword] = useState('');
     const [isSubmitting, setIsSubmitting] = useState(false); // Trạng thái gửi yêu cầu
     const auth = getAuth();
+
+    const CustomButton = ({ title, onPress, backgroundColor, textColor }) => (
+        <TouchableOpacity
+            style={[styles.button, { backgroundColor }]}
+            onPress={onPress}
+        >
+            <Text style={[styles.buttonText, { color: textColor }]}>{title}</Text>
+        </TouchableOpacity>
+    );
 
     const sendTokenToBackend = async (idToken) => {
         try {
@@ -33,7 +42,10 @@ export default function LoginScreen({ navigation }) {
                 }
 
                 Alert.alert('Đăng nhập thành công!');
-                navigation.navigate('Notifications', { userId: data.userId });
+                navigation.navigate('Main', {
+                    screen: 'Notifications',
+                    params: { userId: data.userId }
+                });
             } else {
                 Alert.alert('Lỗi xác thực với backend!');
             }
@@ -76,41 +88,115 @@ export default function LoginScreen({ navigation }) {
     };
 
     return (
-        <View style={{ padding: 20 }}>
-            <Text style={{ fontSize: 20, fontWeight: 'bold', marginBottom: 10 }}>
-                Chọn phương thức đăng nhập
-            </Text>
+        <View style={styles.container}>
+            {/* Button Group */}
+            <CustomButton
+                title="Đăng nhập bằng Email"
+                onPress={() => setMethod('email')}
+                backgroundColor="#007AFF"
+                textColor="#FFFFFF"
+            />
+            <CustomButton
+                title="Đăng nhập bằng Số điện thoại"
+                onPress={() => setMethod('phone')}
+                backgroundColor="#34C759"
+                textColor="#FFFFFF"
+            />
+            <CustomButton
+                title="Đăng nhập bằng Google"
+                onPress={() => setMethod('google')}
+                backgroundColor="#DB4437"
+                textColor="#FFFFFF"
+            />
 
-            <Button title="Đăng nhập bằng Email" onPress={() => setMethod('email')} />
-            <Button title="Đăng nhập bằng Số điện thoại" onPress={() => setMethod('phone')} />
-            <Button title="Đăng nhập bằng Google" onPress={() => setMethod('google')} />
-
+            {/* Email Login Form */}
             {method === 'email' && (
-                <View>
+                <View style={styles.formContainer}>
                     <TextInput
                         placeholder="Email"
                         onChangeText={setEmail}
                         value={email}
-                        style={{ borderBottomWidth: 1, marginBottom: 10 }}
+                        style={styles.textInput}
                         autoCapitalize="none"
+                        keyboardType="email-address"
                     />
                     <TextInput
                         placeholder="Mật khẩu"
                         secureTextEntry
                         onChangeText={setPassword}
                         value={password}
-                        style={{ borderBottomWidth: 1, marginBottom: 10 }}
+                        style={styles.textInput}
                     />
-                    <Button
-                        title={isSubmitting ? 'Đang đăng nhập...' : 'Đăng nhập'}
+                    <TouchableOpacity
+                        style={[
+                            styles.submitButton,
+                            { backgroundColor: isSubmitting ? '#A0A0A0' : '#007AFF' },
+                        ]}
                         onPress={handleEmailLogin}
                         disabled={isSubmitting}
-                    />
+                    >
+                        <Text style={styles.submitButtonText}>
+                            {isSubmitting ? 'Đang đăng nhập...' : 'Đang nhập'}
+                        </Text>
+                    </TouchableOpacity>
                 </View>
             )}
-
             {method === 'phone' && <PhoneLoginScreen />}
             {method === 'google' && <GoogleLogin navigation={navigation} />}
         </View>
     );
 }
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        justifyContent: 'center',
+        padding: 20,
+        backgroundColor: '#F5F5F5',
+    },
+    button: {
+        paddingVertical: 12,
+        borderRadius: 8,
+        marginVertical: 8,
+        alignItems: 'center',
+        justifyContent: 'center',
+        elevation: 2,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.2,
+        shadowRadius: 2,
+    },
+    buttonText: {
+        fontSize: 16,
+        fontWeight: '600',
+    },
+    formContainer: {
+        marginTop: 20,
+    },
+    textInput: {
+        borderBottomWidth: 1,
+        borderBottomColor: '#CCCCCC',
+        marginBottom: 15,
+        paddingVertical: 8,
+        paddingHorizontal: 10,
+        fontSize: 16,
+        backgroundColor: '#FFFFFF',
+        borderRadius: 4,
+    },
+    submitButton: {
+        paddingVertical: 12,
+        borderRadius: 8,
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginTop: 10,
+        elevation: 2,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.2,
+        shadowRadius: 2,
+    },
+    submitButtonText: {
+        color: '#FFFFFF',
+        fontSize: 16,
+        fontWeight: '600',
+    },
+});

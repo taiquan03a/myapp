@@ -2,11 +2,12 @@ import axios from 'axios';
 import { API_BASE_URL } from '../utils/constants';
 
 const paymentApi = {
-    async createPayment(orderId, amount) {
+    async createPayment(orderId, amount, paymentType) {
         try {
             const response = await axios.post(`${API_BASE_URL}/api/payment/create_order`, {
                 orderId,
                 amount,
+                paymentType
             });
             return response.data; // Trả về { order_url, ... }
         } catch (error) {
